@@ -3,52 +3,156 @@
 <head>
  <meta charset="UTF-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
- <title>Lotz Digital Solutions</title>
+ <title>Innovative Solutions</title>
  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
- <div class="hero">
- <div class="hero-content">
- <h1>Empowering Innovation Through Technology</h1>
- <p>We build scalable, secure, and smart digital solutions.</p>
- <div class="hero-buttons">
- <button class="primary">Get a Free Consultation</button>
- <button class="secondary">See Our Work</button>
+ <header class="hero">
+ <div class="overlay">
+    <div style="position: absolute; left: 0; top: 0; height: 100%; display: flex; align-items: center;">
+        <img src="logo.png" alt="LooTe's Ltd Logo" style="max-height: 100%; max-width: 100%; height: 260px; width: auto; display: block; object-fit: contain;">
+    </div>
+    </div>
+        <div>
+            <div style="display: flex; align-items: center; gap: 2em; justify-content: flex-start;"></div>
+                <div style="display: flex; align-items: center; gap: 2em;">
+                    
+                    <div style="display: flex; align-items: center; gap: 2em;">
+                        <h1 style="margin-left: 0;">Innovative Solutions for Your Business</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="city-skyline"></div>
+        </div>
+    </div>
  </div>
- </div>
- <div class="hero-image">
- <img src="https://via.placeholder.com/400x400?text=Person" alt="Tech professional smiling at laptop" />
- </div>
- </div>
+ </header>
 
- <section class="about">
- <h2>About Us</h2>
- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Jerean commodo liguia eget dolor: denaan commusel liquia a laoreet ac undurisque si vulparien.</p>
- <p>Accomptinus justo.s ecus irise’tiis accurrcan ut dc utouie suluas extritise e magnis de per uriart. Prein ed amet aliquam factisis at verlicus optimizer?</p>
- <div class="about-services">
- <div class="service">Custom Software Development</div>
- <div class="service">Cloud & DevOp Solutions</div>
- <div class="service">AI & Data Analytics</div>
- <div class="service">Mobile App Development</div>
+ <main class="sections">
+ <section class="about services">
+ <div class="section-box dark">
+<div style="display: flex; align-items: flex-start; gap: 2em;flex-wrap: wrap;">
+    
+    
+        <h2>About Us</h2>
+      </div>  <p id="about-text" style="max-height: 4.5em; overflow: hidden; transition: max-height 0.3s;">
+                LooTe's Ltd is a Canadian software company specializing in custom-built digital solutions for the construction, fabrication, production, and banking industries. Headquartered in Canada, we develop intelligent, scalable, and secure software tailored to meet the specific needs of each client with limited variations offered free of charge.<br><br>
+                In today’s fast-evolving digital landscape, we understand that businesses need more than just off-the-shelf tools. That’s why we design every solution based on the latest industry trends and relevant standards, ensuring compliance, performance, and future-readiness. Whether you're managing complex operations or streamlining everyday workflows, our software is built to adapt, evolve, and grow with your business.<br><br>
+                At LooTe's, we are committed to delivering not only high-quality software but also exceptional service. From initial consultation to deployment and beyond, we provide continuous maintenance, regular updates, and responsive support to keep your systems running at peak performance. Our agile development process ensures rapid delivery without compromising on quality or security.<br><br>
+                We also take your privacy seriously. All client data is handled with the utmost care and protected by robust security protocols. Your confidentiality is guaranteed, because trust is the foundation of every successful partnership.<br><br>
+                With a forward-thinking mindset and a passion for innovation, LooTe's Ltd is more than just a software provider, we are your long-term technology partner. Our team of experienced developers and industry experts work collaboratively to deliver intuitive, reliable, and future-proof solutions that drive real business value.<br><br>
+                Let’s build the future of your business together.<br><br>
+                <strong>Message from the Director</strong><br>
+                At LooTe’s Ltd, our vision is to empower industries with intelligent, secure, and adaptable software solutions that truly make a difference. As a proudly Canadian company, we are committed to delivering exceptional value through innovation, integrity, and personalized service.<br><br>
+                We understand that every business is unique, which is why we tailor our software to meet your specific needs without unnecessary complexity or cost. We proudly guarantee your privacy and the most competitive pricing in the market, ensuring that high-quality, industry-standard software is accessible to businesses of all sizes.<br><br>
+                Our promise extends beyond development. We offer ongoing support, regular updates, and a strong commitment to data privacy and security. When you choose LooTe’s, you’re not just choosing a software provider, you’re gaining a long-term technology partner.<br><br>
+                Thank you for trusting us to be part of your digital journey.<br><br>
+                — Shejin & Mithra<br>
+                Founder & Director, LooTe’s Ltd
+        </p>
+        <button id="see-more-btn" style="margin-top: 0.5em;">See More</button>
+    
+</div>
+<script>
+        const btn = document.getElementById('see-more-btn');
+        const aboutText = document.getElementById('about-text');
+        let expanded = false;
+        btn.onclick = function() {
+                expanded = !expanded;
+                if (expanded) {
+                        aboutText.style.maxHeight = '2000px';
+                        btn.textContent = 'See Less';
+                } else {
+                        aboutText.style.maxHeight = '4.5em';
+                        btn.textContent = 'See More';
+                }
+        };
+</script>
+ <div class="section-box medium">
+ <h2>Services</h2>
+
+<div style="display: flex; gap: 2em; flex-wrap: wrap;">
+    <ul style="flex: 1 1 0; list-style: none; padding: 0; margin: 0;">
+        <li style="min-width: 200px;">
+            <img src="https://img.icons8.com/ios-filled/24/000000/laptop.png" alt="Custom Software Development" style="vertical-align:middle;filter: grayscale(100%);margin-right:8px;">
+            Custom Software Development
+        </li>
+        <li style="min-width: 200px;">
+            <img src="https://img.icons8.com/ios-filled/24/000000/cloud.png" alt="Cloud Solutions" style="vertical-align:middle;filter: grayscale(100%);margin-right:8px;">
+            Cloud Solutions
+        </li>
+    </ul>
+    <ul style="flex: 1 1 0; list-style: none; padding: 0; margin: 0;">
+        <li style="min-width: 200px;">
+            <img src="https://img.icons8.com/ios-filled/24/000000/combo-chart.png" alt="Data Analytics" style="vertical-align:middle;filter: grayscale(100%);margin-right:8px;">
+            Data Analytics
+        </li>
+        <li style="min-width: 200px;">
+            <img src="https://img.icons8.com/ios-filled/24/000000/consultation.png" alt="IT Consulting" style="vertical-align:middle;filter: grayscale(100%);margin-right:8px;">
+            IT Consulting
+        </li>
+    </ul>
+</div>
+
  </div>
  </section>
 
- <section class="why">
+ <section class="industries-why">
+ <div class="section-box light">
+ <h2>Industries We Serve</h2>
+<ul class="icons-list">
+    <li>
+        <img src="https://img.icons8.com/ios-filled/50/construction-worker.png" alt="Construction" style="vertical-align:middle;filter: grayscale(100%);margin-right:8px;">
+        Construction
+    </li>
+    <li>
+        <img src="https://img.icons8.com/ios-filled/50/factory.png" alt="Fabrication" style="vertical-align:middle;filter: grayscale(100%);margin-right:8px;">
+        Fabrication
+    </li>
+
+</ul>
+ </div>
+ <div class="section-box dark">
  <h2>Why Choose Us</h2>
- <div class="why-grid">
- <div class="why-item">24/7 Support</div>
- <div class="why-item">Agile Methodology</div>
- <div class="why-item">100% Client Satisfaction</div>
- <div class="why-item">Scalable Architecture</div>
+<div class="why-choose-us-icons" style="display: flex; flex-wrap: wrap; gap: 1em;">
+    <ul class="icons-list" style="flex: 1 1 200px; list-style: none; padding: 0; margin: 0;">
+        <li style="min-width: 200px; margin-bottom: 0.5em;">
+            <img src="https://img.icons8.com/ios-filled/32/000000/teamwork.png" alt="Expert Team" style="vertical-align:middle;filter: grayscale(100%);margin-right:8px;">
+            Expert Team
+        </li>
+        <li style="min-width: 200px; margin-bottom: 0.5em;">
+            <img src="https://img.icons8.com/ios-filled/32/000000/checked--v1.png" alt="Proven Track Record" style="vertical-align:middle;filter: grayscale(100%);margin-right:8px;">
+            Proven Track Record
+        </li>
+    </ul>
+    <ul class="icons-list" style="flex: 1 1 200px; list-style: none; padding: 0; margin: 0;">
+        <li style="min-width: 200px; margin-bottom: 0.5em;">
+            <img src="https://img.icons8.com/ios-filled/32/000000/handshake.png" alt="Client-Focused Approach" style="vertical-align:middle;filter: grayscale(100%);margin-right:8px;">
+            Client-Focused Approach
+        </li>
+        <li style="min-width: 200px; margin-bottom: 0.5em;">
+            <img src="https://img.icons8.com/ios-filled/32/000000/technical-support.png" alt="Continuous Support" style="vertical-align:middle;filter: grayscale(100%);margin-right:8px;">
+            Continuous Support
+        </li>
+    </ul>
+</div>
  </div>
- <blockquote>
- “NovaEdgs delivered exceptional results on our project. Their expertise and dedication were evident throughout the entire process.”
- <footer>— John Smith, CEO: TechSolutions</footer>
- </blockquote>
  </section>
 
- <section class="cta">
- <h2>Ready to build the future with us?</h2>
+ <section class="testimonials-contact">
+ <div class="section-box dark">
+ <h2>Testimonials</h2>
+ <blockquote>
+      
+ <footer>-    </footer>
+ </blockquote>
+ </div>
+ <div class="section-box light">
+ <h2>Contact Us</h2>
+ <p>Get in touch with us for more information or to schedule a consultation.</p>
+ <button class="cta">Send Message</button>
+ </div>
  </section>
+ </main>
 </body>
 </html>
